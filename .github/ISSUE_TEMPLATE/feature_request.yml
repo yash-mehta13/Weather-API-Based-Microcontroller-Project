@@ -1,0 +1,13 @@
+name: Feature request
+description: Suggest an improvement
+body:
+  - type: markdown
+    attributes:
+      value: "Do NOT include secrets."
+  - type: textarea
+    id: problem
+    attributes: { label: Problem or goal }
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes: { label: Proposed change, description: Include safety or hardware implications }

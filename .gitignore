@@ -1,0 +1,22 @@
+# Local secrets - never commit
+secrets.h
+*.secret
+.env
+.env.*
+
+# Build output
+build/
+*.bin
+*.elf
+*.map
+*.hex
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Host test output
+tests/build/
