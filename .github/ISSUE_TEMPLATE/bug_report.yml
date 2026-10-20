@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a firmware, documentation or hardware problem
+body:
+  - type: markdown
+    attributes:
+      value: "Do NOT include Wi-Fi passwords, API keys or other secrets. Redact serial logs."
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: Expected vs actual behaviour }
+    validations: { required: true }
+  - type: input
+    id: board
+    attributes: { label: ESP32 board, description: Exact board/module }
+  - type: input
+    id: versions
+    attributes: { label: Arduino IDE / esp32 core / library versions }
+  - type: textarea
+    id: hardware
+    attributes: { label: Hardware (relay module, soil sensor, LCD backpack, pump) and wiring }
+  - type: textarea
+    id: logs
+    attributes: { label: Redacted serial output, render: text }
